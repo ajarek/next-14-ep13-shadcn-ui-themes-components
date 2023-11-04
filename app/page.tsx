@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { ProfileForm } from '@/components/UseForm'
 import Image from 'next/image'
 
 export default function Home() {
@@ -9,9 +10,10 @@ export default function Home() {
         <p className='text-2xl text-muted-foreground'>Wybrane motywy, które możesz kopiować i wklejać do swoich aplikacji</p>
       </section>
       <div className="flex items-center justify-center gap-6">
-        <Button>Ucz się więcej</Button>
-        <Button>Zapisz się</Button>
+        <Button variant={'secondary'}>Ucz się więcej</Button>
+        <Button >Zapisz się</Button>
       </div>
+      <ProfileForm/>
     </main>
   )
 }
