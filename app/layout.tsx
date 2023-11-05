@@ -18,15 +18,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={inter.className }>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'
           enableSystem
           disableTransitionOnChange
         >
+          <div className='max-w-7xl mx-auto'>
+
           <Navbar />
           {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

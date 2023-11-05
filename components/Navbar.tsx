@@ -1,4 +1,5 @@
 import {
+  navigationMenuTriggerStyle,
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuIndicator,
@@ -14,10 +15,10 @@ import { ModeToggle } from './ui/toggle-mode'
 
 const Navbar = () => {
   return (
-    <NavigationMenu>
-      <NavigationMenuList className='w-screen flex justify-between px-8 py-2 border-b border-violet-700'>
+    <NavigationMenu >
+      <NavigationMenuList className='w-full  flex justify-between px-8 py-2 border-b border-violet-700'>
         <NavigationMenuItem>
-          <div className='fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none'>
+          <div className='flex'>
             <a
               className='pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0'
               href='https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
